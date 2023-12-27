@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+:root {
+  --strongCyan: hsl(171, 66%, 44%);
+  --lightBlue: hsl(233, 100%, 69%);
+  --darkGrayishBlue: hsl(210, 10%, 33%);
+  --grayishBlue: hsl(201, 11%, 66%);
+}
+
+#container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 64px 32px;
+  text-align: center;
+  background-image: url(images/bg-header-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header img {
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+p {
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.2rem;
+  color: var(--grayishBlue);
+}
+
+.iOS {
+  display: block;
+  margin: 32px auto 16px auto;
+  background-color: var(--strongCyan);
+}
+
+.Mac {
+  background-color: var(--lightBlue);
+}
+
+.iOS,
+.Mac {
+  border: none;
+  border-radius: 32px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px var(--grayishBlue);
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.iOS:hover,
+.Mac:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+main {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+main h2 {
+  text-align: center;
+  margin-top: 72px;
+  font-size: 24px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+main img {
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 8px;
+}
+
+.options {
+  text-align: center;
+}
+
+.options h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.Lower h2 {
+  margin-top: 128px;
+}
+
+.lowerOptions {
+  text-align: center;
+}
+
+.lowerOptions img {
+  width: 12%;
+}
+
+.lowerOptions h3 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.logos {
+  margin-top: 120px;
+}
+
+.logos img {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clipboard h2 {
+  margin-top: 120px;
+}
+
+footer {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  padding: 40px 32px;
+  margin-top: 96px;
+}
+
+footer img {
+  width: 20%;
+  margin-bottom: 24px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  padding: 12px 0;
+  font-size: 12px;
+}
+
+.mediaIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+@media only screen and (min-width: 1440px) {
+  #container {
+    min-width: 1440px;
+  }
+
+  header {
+    background-image: url(images/bg-header-desktop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header img {
+    width: 10%;
+  }
+
+  .downloadButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .iOS {
+    margin: 0;
+  }
+
+  .iOS,
+  .Mac {
+    width: 15%;
+  }
+
+  main > p {
+    width: 60%;
+    margin: auto;
+  }
+
+  .Upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Upper img {
+    width: 60%;
+  }
+
+  .options {
+    margin-top: -120px;
+  }
+
+  .options h3,
+  .options p {
+    text-align: left;
+    width: 60%;
+  }
+
+  .Lower > img {
+    width: 60%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .lowerOptions img {
+    width: 20%;
+  }
+
+  .option1 > img {
+    width: 12%;
+  }
+
+  .option2 > img {
+    width: 16%;
+  }
+
+  .lowerOptions {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .logos img {
+    width: 12%;
+  }
+
+  footer {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+
+  footer > img {
+    width: 5%;
+    margin-right: 96px;
+  }
+
+  footer ul {
+    columns: 3;
+    text-align: left;
+  }
+
+  footer ul li {
+    margin-right: 24px;
+    padding-top: 0;
+  }
+
+  .mediaIcons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
